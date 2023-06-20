@@ -26,17 +26,10 @@ span {
     margin: 10px;
 }
 
-#Titolo {
-    font-size: 300%;
-    display: inline-block;
-    vertical-align: top;
-    padding: 1%;
-    font-style: oblique;
-}
-
 .logo {
-    width: 4%;
+    width: 12%;
     margin-top: 0.3%;
+
 }
 
 
@@ -60,7 +53,7 @@ span {
 
 .add-sec {
     color: #c9ced3;
-    width: 10%;
+    width: 8%;
     height: 30px;
     margin: 1%;
     background-color: white;
