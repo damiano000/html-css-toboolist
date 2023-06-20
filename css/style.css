@@ -94,22 +94,28 @@ li {
 
 .editorial {
     background-color: #45abea;
+    border-radius: 50%;
 }
 
 .Q1_goals {
     background-color: #9c72e4;
+    border-radius: 50%;
 }
 
-.recruting {
-    background-color: #64c0a9;
+.recruiting{
+    background: #3bdae6;
+    border-radius: 50%;
 }
 
 .mobile {
     background-color: #f19d32;
+    border-radius: 50%;
 }
 .website {
 background-color: #d516db;
+border-radius: 50%;
 }
 .sales {
 background-color: rgb(73, 139, 7);
+border-radius: 50%;
 }
