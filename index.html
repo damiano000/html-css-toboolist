@@ -3,66 +3,64 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>html-css-toboolist</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Toboolist</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- facciamo vedere i Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <header>
-        <section>
-            <img class="logo" src="img/Logo.jpg" alt="logo">
-        </section>
+        <img id="logo" src="img/Logo.jpg" alt="logo boolean">
     </header>
-    <div class="button">
-        <button class="add-task">Add Task</button>
-        <button class="add-sec">Add Section</button>
-    </div>
     <main>
-        <section class="New-Task">
-            <h3>&dtrif; New Task</h3>
-            <ul>
-                <li><span class="check">&check;</span>Quarterly Newsletter <span
-                        class="editorial badge">editorial</span>
-                </li>
-            </ul>
-        </section>
-
-        <section class="Today">
-            <h3>&dtrif; Today</h3>
-            <ul>
-
-                <li> <span class="check">&check;</span>Recruiting blog post<span
-                        class="editorial badge">editorial</span></li>
-                <li> <span class="check">&check;</span>Mobile app luaunch<span class="Q1_goals badge">Q1 Goals</span>
-                </li>
-                <li> <span class="cross">&cross;</span>Interview Jonh H.<span class="recruiting badge">recruiting</span>
-                </li>
-                <li> <span class="check">&check;</span>Summit update to mobile storefronts<span
-                        class="mobile badge">Mobile</span></li>
-
-            </ul>
-
-        </section>
-
-        <section class="Upcoming">
-            <h3>&dtrif; Upcoming</h3>
-            <ul>
-                <li> <span class="cross">&cross;</span>Schedule meeting with Alex</li>
-                <li> <span class="check">&check;</span>Homepage refresh<span class="website badge">Website</span></li>
-                <li> <span class="check">&check;</span>Onboard new Sales team members<span
-                        class="sales badge">Sales</span></li>
-                <li> <span class="check">&check;</span>Review editorial calendar<span
-                        class="editorial badge">Editorial</span></li>
-            </ul>
-        </section>
-
-
-        </section>
+        <div class="container">
+            <div class="top">
+                <button type="button" class="btn btn-filled">Add Task</button>
+                <button type="button" class="btn btn-empty">Add Section</button>
+            </div>
+            <div class="tasks">
+                <ul>
+                    <li>
+                        <h3> New Task </h3> <!-- &#9662 -->
+                        <ul>
+                            <!-- spieghiamo che la classe tag ci serve per gestire le caratteristiche principali del tag e tag-type-n per gestire i colori, non sono degli id perchè possiamo avere tanti tag con quel tipo -->
+                            <li><span class="circle checked"></span>Quarterly Newsletter <span
+                                    class="tag tag-type-1">Editorial</span></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3> Today </h3>
+                        <ul>
+                            <li><span class="circle checked"></span>Recruiting blog post <span
+                                    class="tag tag-type-1">Editorial</span></li>
+                            <li><span class="circle checked"></span>Mobile app luaunch <span class="tag tag-type-2">Q1
+                                    Goals</span></li>
+                            <li><span class="circle delete"></span>Interview John H. <span
+                                    class="tag tag-type-3">Recruiting</span></li>
+                            <li><span class="circle checked"></span>Summit update to mobile storefronts <span
+                                    class="tag tag-type-4">Mobile</span></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3> Upcoming </h3>
+                        <ul>
+                            <li><span class="circle delete"></span>Schedule meeting with Alex</li>
+                            <li><span class="circle checked"></span>Homepage refresh <span
+                                    class="tag tag-type-5">Website</span></li>
+                            <li><span class="circle checked"></span>Onboard new Sales team members <span
+                                    class="tag tag-type-6">Sales</span></li>
+                            <li><span class="circle checked"></span>Review editorial calendar <span
+                                    class="tag tag-type-1">Editorial</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
